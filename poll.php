@@ -4,13 +4,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
@@ -25,7 +20,7 @@
           </div>
           <ul class="nav navbar-nav">
             <li ><a href="index.html">Home</a></li>
-            <li class="active"><a href="poll.html">Poll Results</a></li>
+            <li class="active"><a href="poll.php">Poll Results</a></li>
           </ul>
         </div>
       </nav>
@@ -92,7 +87,7 @@
         <div class="container" style="margin-top:50px; background:rgba(255,255,255,1)">
             <div class="row">
                 <div class="col-md-3">
-                <h4></b>Miguel de Cervantes<b></h4>
+                <h4></b><?php echo $author[0]?><b></h4>
                 </div>
                 <div class="col-lg-12">
                     <div class="progress">
@@ -107,7 +102,7 @@
         <div class="container" style="background:rgba(255,255,255,1)">
             <div class="row">
                 <div class="col-md-3">
-                <h4></b>Charles Dickens<b></h4>
+                <h4></b><?php echo $author[1]?><b></h4>
                 </div>
                 <div class="col-lg-12">
                     <div class="progress">
@@ -122,7 +117,7 @@
         <div class="container" style="background:rgba(255,255,255,1)">
             <div class="row">
                 <div class="col-md-3">
-                <h4></b>J.R.R Tolkien<b></h4>
+                <h4></b><?php echo $author[2]?><b></h4>
                 </div>
                 <div class="col-lg-12">
                     <div class="progress">
@@ -137,7 +132,7 @@
         <div class="container" style="background:rgba(255,255,255,1)">
             <div class="row">
                 <div class="col-md-3">
-                <h4></b>Antoine de Saint-Exuper<b></h4>
+                <h4></b><?php echo $author[3]?><b></h4>
                 </div>
                 <div class="col-lg-12">
                     <div class="progress">
@@ -148,10 +143,6 @@
                  </div>
             </div>
         </div>
-
-
-         
       </div>
-
   </body>
 </html>
